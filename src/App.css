@@ -1,38 +1,93 @@
-.App {
-  text-align: center;
+* {
+  scrollbar-width: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* general */
+.flex {
+  display: flex;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.grey {
+  color: grey;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.w-100 {
+  width: 100%;
+}
+
+.px-4 {
+  padding: 0 40px;
+}
+
+.mb-2 {
+  margin-bottom: 20px;
+}
+
+/* sidebar */
+.menu__heading {
+  padding: 25px 15px;
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* card */
+.card__container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card__item {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-width: 250px;
+  max-width: 300px;
+  min-height: 150px;
+  max-height: 200px;
 }
 
-.App-link {
-  color: #61dafb;
+.card__item div {
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* graph */
+.line__graph__container,
+.activities__container {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.25rem;
+  height: 100%;
+  width: 50%;
+}
+
+/* activites */
+.activities__container > div {
+  width: 100%;
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.activity__item {
+  width: 100%;
+  padding: 0 30px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: #333;
+  color: #fff;
+}
+
+.activity__heading {
+  color: #aaa;
+  margin: 0;
+}
+
+.activity__heading:hover {
+  color: #ccc;
 }
