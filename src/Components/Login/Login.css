@@ -1,1 +1,89 @@
+.login {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+}
 
+.login__container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: whitesmoke;
+}
+
+.login__card {
+  padding: 1.5rem;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login__form {
+  width: 300px;
+}
+
+.login__form > div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.login__form input {
+  height: 30px;
+  width: 98%;
+  margin-left: 10px;
+}
+
+.login__image {
+  width: 250px;
+  height: 200px;
+  object-fit: contain;
+}
+
+.login__btn {
+  width: 200px;
+  background: #00a7fa;
+  background-image: -webkit-linear-gradient(top, #00a7fa, #0065b3);
+  background-image: -moz-linear-gradient(top, #00a7fa, #0065b3);
+  background-image: -ms-linear-gradient(top, #00a7fa, #0065b3);
+  background-image: -o-linear-gradient(top, #00a7fa, #0065b3);
+  background-image: linear-gradient(to bottom, #00a7fa, #0065b3);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  -webkit-box-shadow: 0px 1px 3px #858585;
+  -moz-box-shadow: 0px 1px 3px #858585;
+  box-shadow: 0px 1px 3px #858585;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  margin-left: 50px;
+  text-decoration: none;
+  border: none;
+}
+
+.login__btn:hover {
+  background: #00ffff;
+  background-image: -webkit-linear-gradient(top, #00ffff, #00becc);
+  background-image: -moz-linear-gradient(top, #00ffff, #00becc);
+  background-image: -ms-linear-gradient(top, #00ffff, #00becc);
+  background-image: -o-linear-gradient(top, #00ffff, #00becc);
+  background-image: linear-gradient(to bottom, #00ffff, #00becc);
+  text-decoration: none;
+  border: none;
+}
+
+.login__actions {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+.login__redirects {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
